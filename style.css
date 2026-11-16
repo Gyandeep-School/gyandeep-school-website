@@ -1378,3 +1378,215 @@ footer {
     }
 
 }
+
+/* =====================================================
+   31. SCHOOL IDENTITY
+   ===================================================== */
+
+.school-identity {
+    max-width: 1100px;
+    margin: 55px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--border);
+    background: #ffffff;
+}
+
+.identity-item {
+    text-align: center;
+    padding: 25px 15px;
+    border-right: 1px solid var(--border);
+}
+
+.identity-item:last-child {
+    border-right: none;
+}
+
+.identity-item span {
+    display: block;
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.identity-item h3 {
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   32. SCHOOL VISION
+   ===================================================== */
+
+.school-vision-section {
+    background: var(--cream);
+}
+
+.school-vision-content {
+    max-width: 1050px;
+    margin: auto;
+    padding: 48px 55px;
+    background: #ffffff;
+    border-top: 3px solid var(--gold);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 12px 35px rgba(10, 34, 53, 0.05);
+}
+
+.school-vision-content p {
+    font-family: "Noto Sans Devanagari", "Nirmala UI", sans-serif;
+    color: var(--navy);
+    font-size: 19px;
+    line-height: 2.1;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+/* =====================================================
+   33. FIVE AADHAR BHOOT VISHAY
+   ===================================================== */
+
+.five-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.foundations-section .info-card {
+    min-height: 220px;
+    border-top: 2px solid var(--gold);
+}
+
+
+/* =====================================================
+   34. LEARNING ECOSYSTEM / 12 VYAVASTHAS
+   ===================================================== */
+
+.learning-ecosystem-section {
+    background: #ffffff;
+}
+
+.learning-ecosystem-section .activity-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.learning-ecosystem-section .activity-card {
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* =====================================================
+   35. ACADEMIC NOTE
+   ===================================================== */
+
+.academic-note {
+    max-width: 850px;
+    margin: 28px auto 0;
+    text-align: center;
+    color: var(--grey);
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   36. CARD INTERACTIONS
+   ===================================================== */
+
+.activity-card {
+    transition: 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(10, 34, 53, 0.06);
+}
+
+
+/* =====================================================
+   37. TABLET RESPONSIVE ADDITIONS
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    .school-identity {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .identity-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .identity-item:nth-child(1),
+    .identity-item:nth-child(2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .five-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learning-ecosystem-section .activity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =====================================================
+   38. MOBILE RESPONSIVE ADDITIONS
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    .school-identity {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .identity-item {
+        padding: 20px 12px;
+    }
+
+    .school-vision-content {
+        padding: 30px 22px;
+    }
+
+    .school-vision-content p {
+        font-size: 16px;
+        line-height: 2;
+        text-align: left;
+    }
+
+    .five-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-ecosystem-section .activity-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   39. SMALL MOBILE RESPONSIVE ADDITIONS
+   ===================================================== */
+
+@media (max-width: 420px) {
+
+    .school-vision-content {
+        padding: 24px 18px;
+    }
+
+    .school-vision-content p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .identity-item h3 {
+        font-size: 14px;
+    }
+
+}
