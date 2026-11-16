@@ -1,12 +1,10 @@
+
 /* =====================================================
    GYANDEEP SCHOOL WEBSITE
    COMPLETE CSS
-   ===================================================== */
+===================================================== */
 
-
-/* =====================================================
-   1. RESET & BASIC SETTINGS
-   ===================================================== */
+/* 1. RESET */
 
 * {
     margin: 0;
@@ -35,246 +33,145 @@ img {
     display: block;
 }
 
-
-/* =====================================================
-   2. COLOUR PALETTE
-   ===================================================== */
+/* 2. COLOUR PALETTE */
 
 :root {
-
     --navy: #12304a;
-
     --dark-blue: #0a2235;
-
     --gold: #c49a52;
-
     --gold-light: #e8d5a8;
-
     --cream: #f7f4ed;
-
     --light-blue: #f3f6f8;
-
     --white: #ffffff;
-
     --text: #263238;
-
     --grey: #68747c;
-
     --border: #e1e6e9;
 }
 
-
-/* =====================================================
-   3. TOP BAR
-   ===================================================== */
+/* 3. TOP BAR */
 
 .top-bar {
-
-    height: 38px;
-
+    min-height: 38px;
     padding: 0 4%;
-
     background: var(--dark-blue);
-
     color: #ffffff;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     font-size: 12px;
 }
 
 .top-links {
-
     display: flex;
-
     gap: 25px;
 }
 
 .top-links a {
-
     color: #ffffff;
-
     opacity: 0.9;
-
     transition: 0.3s ease;
 }
 
 .top-links a:hover {
-
     color: var(--gold-light);
 }
 
-
-/* =====================================================
-   4. HEADER
-   ===================================================== */
+/* 4. HEADER */
 
 .header {
-
     min-height: 92px;
-
     padding: 10px 4%;
-
     background: #ffffff;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 30px;
-
     border-bottom: 1px solid #eeeeee;
-
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
 }
 
-
-/* =====================================================
-   5. HEADER LOGOS
-   ===================================================== */
+/* 5. HEADER LOGOS */
 
 .header-logo {
-
     width: 145px;
-
     height: 70px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     flex-shrink: 0;
 }
 
 .header-logo img {
-
     max-width: 100%;
-
     max-height: 65px;
-
     width: auto;
-
     height: auto;
-
     object-fit: contain;
 }
 
-
-/* School logo - LEFT */
-
 .school-logo {
-
     justify-content: flex-start;
 }
 
-
-/* VB affiliated organisation logo - RIGHT */
-
 .vb-logo {
-
     justify-content: flex-end;
 }
 
-
-/* =====================================================
-   6. NAVIGATION
-   ===================================================== */
+/* 6. NAVIGATION */
 
 .navigation {
-
     flex: 1;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 24px;
 }
 
 .navigation a {
-
     color: var(--navy);
-
     font-size: 13px;
-
     font-weight: 500;
-
     position: relative;
-
     transition: 0.3s ease;
-
     white-space: nowrap;
 }
 
 .navigation a::after {
-
     content: "";
-
     position: absolute;
-
     left: 0;
-
     bottom: -9px;
-
     width: 0;
-
     height: 2px;
-
     background: var(--gold);
-
     transition: 0.3s ease;
 }
 
 .navigation a:hover {
-
     color: var(--gold);
 }
 
 .navigation a:hover::after {
-
     width: 100%;
 }
 
-
-/* =====================================================
-   7. HERO SECTION
-   ===================================================== */
+/* 7. HERO SECTION */
 
 .hero {
-
     min-height: 650px;
-
     padding: 80px 8%;
-
     display: flex;
-
     align-items: center;
-
     position: relative;
-
     background:
-
         linear-gradient(
             90deg,
             rgba(7, 30, 48, 0.96),
             rgba(10, 40, 61, 0.82),
             rgba(10, 40, 61, 0.35)
         ),
-
         linear-gradient(
             135deg,
             #173e5c,
@@ -283,1105 +180,690 @@ img {
 }
 
 .hero-content {
-
     max-width: 760px;
-
     color: #ffffff;
 }
 
 .eyebrow {
-
     color: var(--gold-light);
-
     font-size: 13px;
-
     font-weight: 700;
-
     letter-spacing: 3px;
-
     margin-bottom: 20px;
 }
 
 .hero h1 {
-
     font-size: clamp(42px, 5vw, 68px);
-
     line-height: 1.12;
-
     font-weight: 600;
-
     margin-bottom: 25px;
 }
 
 .hero-text {
-
     max-width: 600px;
-
     color: #e7eef2;
-
     font-size: 17px;
-
     margin-bottom: 35px;
 }
 
-
-/* =====================================================
-   8. BUTTONS
-   ===================================================== */
+/* 8. BUTTONS */
 
 .hero-buttons {
-
     display: flex;
-
     gap: 14px;
-
     flex-wrap: wrap;
 }
 
 .btn {
-
     display: inline-block;
-
     padding: 13px 28px;
-
     font-size: 13px;
-
     font-weight: 600;
-
     border-radius: 2px;
-
     transition: 0.3s ease;
 }
 
 .primary-btn {
-
     background: var(--gold);
-
     color: #ffffff;
 }
 
 .primary-btn:hover {
-
     background: #ad8139;
-
     transform: translateY(-2px);
 }
 
 .outline-btn {
-
     color: #ffffff;
-
     border: 1px solid rgba(255,255,255,0.7);
 }
 
 .outline-btn:hover {
-
     background: #ffffff;
-
     color: var(--navy);
 }
 
-
-/* =====================================================
-   9. GENERAL SECTIONS
-   ===================================================== */
+/* 9. GENERAL SECTIONS */
 
 .section {
-
     padding: 100px 8%;
 }
 
 .light-section {
-
     background: var(--light-blue);
 }
 
-
-/* =====================================================
-   10. SECTION HEADINGS
-   ===================================================== */
+/* 10. SECTION HEADINGS */
 
 .section-heading {
-
     max-width: 760px;
-
     margin: 0 auto 55px;
-
     text-align: center;
 }
 
 .section-label {
-
     color: var(--gold);
-
     font-size: 12px;
-
     font-weight: 700;
-
     letter-spacing: 3px;
-
     margin-bottom: 12px;
 }
 
 .section-heading h2 {
-
     color: var(--navy);
-
     font-size: 38px;
-
     font-weight: 600;
-
     line-height: 1.25;
 }
 
 .heading-line {
-
     width: 55px;
-
     height: 2px;
-
     background: var(--gold);
-
     margin: 18px auto;
 }
 
 .section-intro {
-
     color: var(--grey);
-
     max-width: 650px;
-
     margin: 15px auto 0;
-
     font-size: 15px;
 }
 
-
-/* =====================================================
-   11. ABOUT SECTION
-   ===================================================== */
+/* 11. ABOUT SECTION */
 
 .about-container {
-
     max-width: 850px;
-
     margin: auto;
-
     text-align: center;
 }
 
 .about-text p {
-
     color: var(--grey);
-
     font-size: 17px;
-
     margin-bottom: 18px;
 }
 
-
-/* =====================================================
-   12. WHY GYANDEEP CARDS
-   ===================================================== */
+/* 12. WHY GYANDEEP CARDS */
 
 .cards {
-
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
     gap: 20px;
 }
 
 .four-cards {
-
     grid-template-columns: repeat(4, 1fr);
 }
 
 .info-card {
-
     background: #ffffff;
-
     padding: 32px 26px;
-
     border: 1px solid var(--border);
-
     transition: 0.3s ease;
 }
 
 .info-card:hover {
-
     transform: translateY(-6px);
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
 }
 
 .card-number {
-
     color: var(--gold);
-
     font-size: 12px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
-
     margin-bottom: 20px;
 }
 
 .info-card h3 {
-
     color: var(--navy);
-
     font-size: 19px;
-
     margin-bottom: 12px;
 }
 
 .info-card p {
-
     color: var(--grey);
-
     font-size: 14px;
 }
 
-
-/* =====================================================
-   13. ACADEMICS
-   ===================================================== */
+/* 13. ACADEMICS */
 
 .academic-cards {
-
     max-width: 1050px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 22px;
 }
 
 .academic-card {
-
     min-height: 230px;
-
     padding: 32px;
-
     background: var(--navy);
-
     color: #ffffff;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: flex-end;
-
     position: relative;
-
     overflow: hidden;
-
     transition: 0.3s ease;
 }
 
 .academic-card:hover {
-
     transform: translateY(-5px);
 }
 
 .academic-card::before {
-
     content: "";
-
     position: absolute;
-
     left: 0;
-
     top: 0;
-
     width: 5px;
-
     height: 100%;
-
     background: var(--gold);
 }
 
 .academic-tag {
-
     color: var(--gold-light);
-
     font-size: 10px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
-
     margin-bottom: 12px;
 }
 
 .academic-card h3 {
-
     font-size: 25px;
-
     margin-bottom: 8px;
 }
 
 .academic-card p {
-
     color: #d7e0e5;
-
     font-size: 14px;
 }
 
-
-/* =====================================================
-   14. CAMPUS
-   ===================================================== */
+/* 14. CAMPUS */
 
 .campus-placeholder {
-
     max-width: 1200px;
-
     height: 420px;
-
     margin: auto;
-
-    background:
-        linear-gradient(
-            135deg,
-            #dce6eb,
-            #b9cbd5
-        );
-
+    background: linear-gradient(135deg, #dce6eb, #b9cbd5);
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     text-align: center;
-
     color: var(--navy);
 }
 
 .campus-placeholder span {
-
     font-size: 11px;
-
     letter-spacing: 3px;
-
     color: var(--gold);
-
     font-weight: 700;
 }
 
 .campus-placeholder h3 {
-
     font-size: 28px;
-
     margin: 10px 0;
 }
 
 .campus-placeholder p {
-
     max-width: 450px;
-
     color: var(--grey);
-
     font-size: 14px;
 }
 
-
-/* =====================================================
-   15. ACTIVITIES
-   ===================================================== */
+/* 15. ACTIVITIES */
 
 .activity-grid {
-
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
 }
 
 .activity-card {
-
     padding: 35px;
-
     border-left: 3px solid var(--gold);
-
     background: var(--cream);
+    transition: 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(10, 34, 53, 0.06);
 }
 
 .activity-card h3 {
-
     color: var(--navy);
-
     font-size: 20px;
-
     margin-bottom: 10px;
 }
 
 .activity-card p {
-
     color: var(--grey);
-
     font-size: 14px;
 }
 
-
-/* =====================================================
-   16. ADMISSIONS
-   ===================================================== */
+/* 16. ADMISSIONS */
 
 .admission-section {
-
     padding: 100px 8%;
-
     text-align: center;
-
-    background:
-        linear-gradient(
-            120deg,
-            var(--dark-blue),
-            var(--navy)
-        );
-
+    background: linear-gradient(120deg, var(--dark-blue), var(--navy));
     color: #ffffff;
 }
 
 .admission-content {
-
     max-width: 760px;
-
     margin: auto;
 }
 
 .light-label {
-
     color: var(--gold-light);
 }
 
 .admission-content h2 {
-
     font-size: 42px;
-
     line-height: 1.25;
-
     margin-bottom: 18px;
 }
 
 .admission-content > p:not(.section-label) {
-
     color: #dce5ea;
-
     margin-bottom: 30px;
 }
 
 .gold-btn {
-
     background: var(--gold);
-
     color: #ffffff;
 }
 
 .gold-btn:hover {
-
     background: #ad8139;
-
     transform: translateY(-2px);
 }
 
-
-/* =====================================================
-   17. GALLERY
-   ===================================================== */
+/* 17. GALLERY */
 
 .gallery-grid {
-
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 15px;
 }
 
 .gallery-placeholder {
-
     height: 230px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #edf2f4,
-            #d4dfe5
-        );
-
+    background: linear-gradient(135deg, #edf2f4, #d4dfe5);
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     color: var(--grey);
-
     border: 1px solid var(--border);
-
     transition: 0.3s ease;
 }
 
 .gallery-placeholder:hover {
-
     transform: scale(1.02);
 }
 
 .gallery-placeholder span {
-
     font-size: 11px;
-
     letter-spacing: 2px;
 }
 
-
-/* =====================================================
-   18. ALUMNI
-   ===================================================== */
+/* 18. ALUMNI */
 
 .alumni-section {
-
     padding: 95px 8%;
-
     text-align: center;
-
     background: var(--cream);
 }
 
 .alumni-section h2 {
-
     color: var(--navy);
-
     font-size: 68px;
-
     letter-spacing: 10px;
-
     margin: 5px 0;
 }
 
 .alumni-section h3 {
-
     color: var(--navy);
-
     font-size: 21px;
-
     font-weight: 500;
 }
 
 .alumni-section > div > p:last-child {
-
     color: var(--grey);
-
     margin-top: 10px;
 }
 
-
-/* =====================================================
-   19. CONTACT
-   ===================================================== */
+/* 19. CONTACT */
 
 .contact-grid {
-
     max-width: 1050px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
 }
 
 .contact-card {
-
     text-align: center;
-
     padding: 35px 25px;
-
     background: var(--light-blue);
-
     border: 1px solid var(--border);
 }
 
 .contact-label {
-
     color: var(--gold);
-
     font-size: 10px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
 }
 
 .contact-card h3 {
-
     color: var(--navy);
-
     font-size: 20px;
-
     margin: 10px 0;
 }
 
 .contact-card p {
-
     color: var(--grey);
-
     font-size: 14px;
 }
 
-
-/* =====================================================
-   20. FOOTER
-   ===================================================== */
+/* 20. FOOTER */
 
 footer {
-
     background: var(--dark-blue);
-
     color: #ffffff;
-
     padding: 50px 8% 20px;
 }
 
 .footer-content {
-
     max-width: 1200px;
-
     margin: auto;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     gap: 30px;
 }
 
 .footer-brand h3 {
-
     letter-spacing: 2px;
-
     margin-bottom: 6px;
 }
 
 .footer-brand p {
-
     color: #bfcbd2;
-
     font-size: 13px;
 }
 
 .footer-links {
-
     display: flex;
-
     gap: 22px;
-
     flex-wrap: wrap;
 }
 
 .footer-links a {
-
     color: #d7e0e5;
-
     font-size: 13px;
 }
 
 .footer-links a:hover {
-
     color: var(--gold-light);
 }
 
 .footer-bottom {
-
     max-width: 1200px;
-
     margin: 35px auto 0;
-
     padding-top: 18px;
-
     border-top: 1px solid rgba(255,255,255,0.12);
-
     text-align: center;
 }
 
 .footer-bottom p {
-
     color: #9daeb8;
-
     font-size: 11px;
 }
 
-
-/* =====================================================
-   21. TABLET RESPONSIVE
-   ===================================================== */
+/* 21. TABLET RESPONSIVE */
 
 @media (max-width: 1100px) {
 
     .header {
-
         padding-left: 3%;
-
         padding-right: 3%;
-
         gap: 15px;
     }
 
     .header-logo {
-
         width: 120px;
     }
 
     .navigation {
-
         gap: 15px;
     }
 
     .navigation a {
-
         font-size: 12px;
     }
 
     .four-cards {
-
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-
-/* =====================================================
-   22. MOBILE RESPONSIVE
-   ===================================================== */
+/* 22. MOBILE RESPONSIVE */
 
 @media (max-width: 750px) {
 
-
-    /* TOP BAR */
-
     .top-bar {
-
         display: none;
     }
 
-
-    /* HEADER */
-
     .header {
-
         min-height: auto;
-
         padding: 14px 5%;
-
         flex-wrap: wrap;
-
         gap: 12px;
     }
 
-
-    /* MOBILE LOGOS */
-
     .header-logo {
-
         width: 110px;
-
         height: 55px;
     }
 
     .header-logo img {
-
         max-height: 50px;
     }
 
-
-    /* MOBILE NAVIGATION */
-
     .navigation {
-
         order: 3;
-
         flex-basis: 100%;
-
         gap: 9px 17px;
-
         justify-content: center;
-
         flex-wrap: wrap;
     }
 
     .navigation a {
-
         font-size: 11px;
     }
 
-
-    /* HERO */
-
     .hero {
-
         min-height: 600px;
-
         padding: 70px 7%;
     }
 
     .hero h1 {
-
         font-size: 42px;
     }
 
     .hero-text {
-
         font-size: 15px;
     }
 
-
-    /* SECTIONS */
-
     .section {
-
         padding: 70px 7%;
     }
 
     .section-heading h2 {
-
         font-size: 30px;
     }
-
-
-    /* CARDS */
 
     .four-cards,
     .academic-cards,
     .activity-grid,
     .gallery-grid,
     .contact-grid {
-
         grid-template-columns: 1fr;
     }
 
-
-    /* CAMPUS */
-
     .campus-placeholder {
-
         height: 280px;
-
         padding: 30px;
     }
 
-
-    /* ADMISSIONS */
-
     .admission-content h2 {
-
         font-size: 32px;
     }
 
-
-    /* ALUMNI */
-
     .alumni-section h2 {
-
         font-size: 50px;
-
         letter-spacing: 7px;
     }
 
-
-    /* FOOTER */
-
     .footer-content {
-
         flex-direction: column;
-
         text-align: center;
     }
 
     .footer-links {
-
         justify-content: center;
     }
-
 }
-/* =====================================================
-   SOCIAL & CONTACT BUTTONS
-===================================================== */
+
+/* 23. SOCIAL & CONTACT BUTTONS */
 
 .social-section {
-
     margin-top: 55px;
-
     text-align: center;
 }
 
 .social-buttons {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 15px;
-
     margin-top: 15px;
-
     flex-wrap: wrap;
 }
 
 .social-button {
-
     display: inline-block;
-
     min-width: 150px;
-
     padding: 12px 25px;
-
     font-size: 13px;
-
     font-weight: 600;
-
     border-radius: 3px;
-
     transition: 0.3s ease;
 }
 
 .whatsapp-button {
-
     background: #1f8f55;
-
     color: #ffffff;
 }
 
 .whatsapp-button:hover {
-
     background: #176e41;
-
     transform: translateY(-2px);
 }
 
 .instagram-button {
-
     background: var(--navy);
-
     color: #ffffff;
 }
 
 .instagram-button:hover {
-
     background: var(--gold);
-
     transform: translateY(-2px);
 }
 
-
-/* =====================================================
-   MOBILE SOCIAL BUTTONS
-===================================================== */
+/* MOBILE SOCIAL BUTTONS */
 
 @media (max-width: 750px) {
 
     .social-buttons {
-
         flex-direction: column;
-
         gap: 10px;
     }
 
     .social-button {
-
         width: 100%;
-
         max-width: 260px;
-
         text-align: center;
     }
-
 }
-/* =====================================================
-   FLOATING WHATSAPP BUTTON
-===================================================== */
+
+/* 24. FLOATING WHATSAPP BUTTON */
 
 .floating-whatsapp {
-
     position: fixed;
-
     right: 22px;
-
     bottom: 22px;
-
     z-index: 2000;
-
     background: #1f8f55;
-
     color: #ffffff;
-
     padding: 13px 20px;
-
     border-radius: 30px;
-
     font-size: 13px;
-
     font-weight: 600;
-
-    box-shadow:
-        0 6px 20px rgba(0,0,0,0.20);
-
+    box-shadow: 0 6px 20px rgba(0,0,0,0.20);
     transition: 0.3s ease;
 }
 
 .floating-whatsapp:hover {
-
     background: #176e41;
-
     transform: translateY(-3px);
 }
-
 
 @media (max-width: 750px) {
 
     .floating-whatsapp {
-
         right: 15px;
-
         bottom: 15px;
-
         padding: 11px 17px;
-
         font-size: 12px;
     }
-
 }
 
-/* =====================================================
-   31. SCHOOL IDENTITY
-   ===================================================== */
+/* 25. SCHOOL IDENTITY */
 
 .school-identity {
     max-width: 1100px;
@@ -1417,10 +899,7 @@ footer {
     font-weight: 600;
 }
 
-
-/* =====================================================
-   32. SCHOOL VISION
-   ===================================================== */
+/* 26. SCHOOL VISION */
 
 .school-vision-section {
     background: var(--cream);
@@ -1445,10 +924,7 @@ footer {
     text-align: justify;
 }
 
-
-/* =====================================================
-   33. FIVE AADHAR BHOOT VISHAY
-   ===================================================== */
+/* 27. FIVE AADHAR BHOOT VISHAY */
 
 .five-cards {
     grid-template-columns: repeat(3, 1fr);
@@ -1459,10 +935,7 @@ footer {
     border-top: 2px solid var(--gold);
 }
 
-
-/* =====================================================
-   34. LEARNING ECOSYSTEM / 12 VYAVASTHAS
-   ===================================================== */
+/* 28. LEARNING ECOSYSTEM */
 
 .learning-ecosystem-section {
     background: #ffffff;
@@ -1479,10 +952,7 @@ footer {
     justify-content: center;
 }
 
-
-/* =====================================================
-   35. ACADEMIC NOTE
-   ===================================================== */
+/* 29. ACADEMIC NOTE */
 
 .academic-note {
     max-width: 850px;
@@ -1492,10 +962,7 @@ footer {
     font-size: 13px;
 }
 
-
-/* =====================================================
-   36. CARD INTERACTIONS
-   ===================================================== */
+/* 30. CARD INTERACTIONS */
 
 .activity-card {
     transition: 0.3s ease;
@@ -1506,10 +973,7 @@ footer {
     box-shadow: 0 12px 28px rgba(10, 34, 53, 0.06);
 }
 
-
-/* =====================================================
-   37. TABLET RESPONSIVE ADDITIONS
-   ===================================================== */
+/* 31. TABLET RESPONSIVE ADDITIONS */
 
 @media (max-width: 1100px) {
 
@@ -1535,10 +999,7 @@ footer {
     }
 }
 
-
-/* =====================================================
-   38. MOBILE RESPONSIVE ADDITIONS
-   ===================================================== */
+/* 32. MOBILE RESPONSIVE ADDITIONS */
 
 @media (max-width: 750px) {
 
@@ -1569,10 +1030,7 @@ footer {
     }
 }
 
-
-/* =====================================================
-   39. SMALL MOBILE RESPONSIVE ADDITIONS
-   ===================================================== */
+/* 33. SMALL MOBILE RESPONSIVE ADDITIONS */
 
 @media (max-width: 420px) {
 
@@ -1588,5 +1046,4 @@ footer {
     .identity-item h3 {
         font-size: 14px;
     }
-
 }
